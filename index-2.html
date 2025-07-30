@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Touria - Tour & Travel Booking HTML Template">
+
+   <!-- Title & Favicon -->
+   <title>Air Booking | Touria - Tour & Travel Booking HTML Template</title>
+   <link rel="shortcut icon" href="assets/img/core-img/favicon2.ico" type="image/x-icon">
+
+   <!-- Stylesheet -->
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="assets/css/nice-select2.css">
+   <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+   <link rel="stylesheet" href="assets/css/venobox.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!-- Preloader -->
+   <div class="preloader" id="preloader">
+      <div class="spinner-grow" role="status">
+         <span class="visually-hidden">Loading...</span>
+      </div>
+   </div>
+
+   <!-- Right Side Offcanvas -->
+   <div class="offcanvas offcanvas-end right-side-touria-offcanvas shadow-lg" tabindex="-1" id="sideMenuOffcanvas">
+      <!-- Offcanvas Header -->
+      <div class="offcanvas-header">
+         <div>
+            <img src="assets/img/core-img/logo-two.png" alt="">
+         </div>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- Offcanvas Body -->
+      <div class="offcanvas-body">
+         <div class="container-fluid">
+            <div class="d-flex flex-column gap-5 mb-5">
+               <!-- Single Item -->
+               <div class="about-card-sm theme-info d-flex align-items-center gap-3">
+                  <div class="icon text-info">
+                     <i class="ti ti-shield-half"></i>
+                  </div>
+                  <div>
+                     <h4>Safety First Always</h4>
+                     <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                  </div>
+               </div>
+
+               <!-- Single Item -->
+               <div class="about-card-sm theme-info d-flex align-items-center gap-3">
+                  <div class="icon text-info">
+                     <i class="ti ti-world-star"></i>
+                  </div>
+                  <div>
+                     <h4>Experience the World</h4>
+                     <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                  </div>
+               </div>
+
+               <!-- Single Item -->
+               <div class="about-card-sm theme-info d-flex align-items-center gap-3">
+                  <div class="icon text-info">
+                     <i class="ti ti-capture"></i>
+                  </div>
+                  <div>
+                     <h4>Excellence in Service</h4>
+                     <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                  </div>
+               </div>
+
+               <!-- Single Item -->
+               <div class="about-card-sm theme-info d-flex align-items-center gap-3">
+                  <div class="icon text-info">
+                     <i class="ti ti-user"></i>
+                  </div>
+                  <div>
+                     <h4>Friendly Guider</h4>
+                     <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                  </div>
+               </div>
+
+               <a href="about-us.html" class="btn btn-info">Book Now <i class="icon-arrow-right"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Search Form Overlay -->
+   <div class="search-bg-overlay" id="searchOverlay"></div>
+
+   <!-- Search Form Popup -->
+   <div class="search-form-popup">
+      <h2 class="mb-5 display-6 fw-bold text-white">How can I help you, Today?</h2>
+      <button type="button" class="close-btn" id="searchClose" aria-label="Close">
+         <i class="ti ti-x"></i>
+      </button>
+      <form class="search-form">
+         <input type="search" class="form-control" placeholder="Search...">
+         <button type="submit" class="btn btn-success d-none"><i class="ti ti-search"></i></button>
+      </form>
+   </div>
+
+   <!-- Header Area-->
+   <header class="header-area style-two">
+      <!-- Header Top -->
+      <div class="header-top px-3 px-lg-4 px-xxl-5">
+         <div class="h-100 d-flex align-items-center justify-content-between">
+            <!-- Right Side -->
+            <div class="right-side">
+               <div class="social-nav d-flex align-items-center gap-3">
+                  <a href="#">
+                     <i class="ti ti-brand-facebook"></i> <span class="d-none d-lg-block">Facebook</span>
+                  </a>
+                  <a href="#">
+                     <i class="ti ti-brand-x"></i> <span class="d-none d-lg-block">Twitter</span>
+                  </a>
+                  <a href="#">
+                     <i class="ti ti-brand-linkedin"></i> <span class="d-none d-lg-block">LinkedIn</span>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Left Side -->
+            <div class="left-side d-flex align-items-center gap-4 gap-lg-5">
+               <div class="d-flex align-items-center gap-1">
+                  <i class="ti ti-mail-filled"></i>
+                  <span class="d-none d-lg-block">info-help@Touria.com</span>
+               </div>
+               <div class="d-flex align-items-center gap-1">
+                  <i class="ti ti-map-pin-filled"></i>
+                  <span class="d-none d-lg-block">258 Street Avenue, Berlin, Germany</span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-xl px-3 px-lg-4 px-xxl-5">
+         <!-- Navbar Brand -->
+         <a class="navbar-brand" href="index-2.html">
+            <img src="assets/img/core-img/logo-two.png" alt="">
+         </a>
+
+         <!-- Navbar Toggler -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#touriaNav"
+            aria-controls="touriaNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ti ti-menu-deep"></i>
+         </button>
+
+         <!-- Navbar Nav -->
+         <div class="collapse navbar-collapse" id="touriaNav">
+            <ul class="navbar-nav align-items-xl-center navbar-nav-scroll">
+               <li class="touria-dd">
+                  <a href="#">Home <i class="ti ti-chevron-down"></i></a>
+                  <ul class="touria-dd-menu">
+                     <li>
+                        <a href="index.html">Tour Booking</a>
+                     </li>
+                     <li>
+                        <a href="index-2.html">Air Booking</a>
+                     </li>
+                     <li>
+                        <a href="index-3.html">Hotel Booking</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="touria-dd">
+                  <a href="#">Tours <i class="ti ti-chevron-down"></i></a>
+                  <ul class="touria-dd-menu">
+                     <li>
+                        <a href="tour-list.html">Tour List</a>
+                     </li>
+                     <li>
+                        <a href="tour-details.html">Tour Details</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="touria-dd">
+                  <a href="#">Destinations <i class="ti ti-chevron-down"></i></a>
+                  <ul class="touria-dd-menu">
+                     <li>
+                        <a href="destination.html">Destination</a>
+                     </li>
+                     <li>
+                        <a href="destination-details.html">Destination Details</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="touria-dd">
+                  <a href="#">Pages <i class="ti ti-chevron-down"></i></a>
+                  <ul class="touria-dd-menu">
+                     <li class="touria-dd">
+                        <a href="about-us.html">About Us</a>
+                     </li>
+                     <li class="touria-dd">
+                        <a href="#">Destinations <i class="ti ti-chevron-right"></i></a>
+                        <ul class="touria-dd-menu">
+                           <li>
+                              <a href="destination.html">Destination</a>
+                           </li>
+                           <li>
+                              <a href="destination-details.html">Destination Details</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="touria-dd">
+                        <a href="#">Tours <i class="ti ti-chevron-right"></i></a>
+                        <ul class="touria-dd-menu">
+                           <li>
+                              <a href="tour-list.html">Tour List</a>
+                           </li>
+                           <li>
+                              <a href="tour-details.html">Tour Details</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="touria-dd">
+                        <a href="#">Hotels <i class="ti ti-chevron-right"></i></a>
+                        <ul class="touria-dd-menu">
+                           <li>
+                              <a href="hotel-list.html">Hotel List</a>
+                           </li>
+                           <li>
+                              <a href="hotel-details.html">Hotel Details</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="touria-dd">
+                        <a href="#">Guider <i class="ti ti-chevron-right"></i></a>
+                        <ul class="touria-dd-menu">
+                           <li>
+                              <a href="guider.html">Guider</a>
+                           </li>
+                           <li>
+                              <a href="guider-details.html">Guider Details</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="faqs.html">FAQs</a>
+                     </li>
+                     <li>
+                        <a href="gallery.html">Gallery</a>
+                     </li>
+                     <li>
+                        <a href="404.html">404</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="touria-dd">
+                  <a href="#">Blog <i class="ti ti-chevron-down"></i></a>
+                  <ul class="touria-dd-menu">
+                     <li>
+                        <a href="blog-list.html">Blog List</a>
+                     </li>
+                     <li>
+                        <a href="blog-grid.html">Blog Grid</a>
+                     </li>
+                     <li>
+                        <a href="blog-details.html">Blog Details</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="contact.html">Contact</a>
+               </li>
+            </ul>
+
+            <!-- Header Navigation -->
+            <div class="header-navigation d-flex flex-wrap align-items-center gap-3 ms-auto mt-4 mt-xl-0">
+               <!-- Get A Quote -->
+               <a class="btn btn-info" href="contact.html">Get a Quote <i class="icon-arrow-right"></i></a>
+
+               <!-- Search Button -->
+               <div class="header-search-btn" id="searchButton">
+                  <button class="btn">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect width="20" height="20" fill="#F7F7F7" />
+                        <path
+                           d="M14.0772 14.0987L16.6438 16.6654M15.833 9.58203C15.833 11.2396 15.1745 12.8293 14.0024 14.0014C12.8303 15.1736 11.2406 15.832 9.58301 15.832C7.9254 15.832 6.33569 15.1736 5.16359 14.0014C3.99149 12.8293 3.33301 11.2396 3.33301 9.58203C3.33301 7.92443 3.99149 6.33472 5.16359 5.16261C6.33569 3.99051 7.9254 3.33203 9.58301 3.33203C11.2406 3.33203 12.8303 3.99051 14.0024 5.16261C15.1745 6.33472 15.833 7.92443 15.833 9.58203Z"
+                           stroke="#161920" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </button>
+               </div>
+
+               <!-- Offcanvas Icon -->
+               <div class="offcanvas-icon" data-bs-toggle="offcanvas" data-bs-target="#sideMenuOffcanvas"
+                  aria-controls="sideMenuOffcanvas">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 26 18" fill="none">
+                     <path
+                        d="M19.5 1.28571C19.5 0.575658 18.9179 0 18.2 0H1.3C0.582056 0 0 0.575658 0 1.28571C0 1.99577 0.582056 2.57143 1.3 2.57143H18.2C18.9179 2.57143 19.5 1.99572 19.5 1.28571ZM1.3 7.71428H24.7C25.4179 7.71428 26 8.28999 26 9C26 9.71006 25.4179 10.2857 24.7 10.2857H1.3C0.582056 10.2857 0 9.71006 0 9C0 8.28999 0.582056 7.71428 1.3 7.71428ZM1.3 15.4286H13C13.7179 15.4286 14.3 16.0042 14.3 16.7143C14.3 17.4243 13.7179 18 13 18H1.3C0.582056 18 0 17.4243 0 16.7143C0 16.0042 0.582056 15.4286 1.3 15.4286Z"
+                        fill="#161920" />
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- Hero Section -->
+   <section class="hero-section style-two px-3 px-lg-4 px-xxl-5">
+      <!-- Hero Swiper -->
+      <div class="swiper hero-swiper">
+         <div class="swiper-wrapper">
+
+            <!-- Slide Item -->
+            <div class="swiper-slide hero-swiper-slide" style="background-image: url('assets/img/bg-img/3.jpg');">
+               <div class="container">
+                  <div class="row">
+                     <!-- Hero Content -->
+                     <div class="col-9 col-lg-7 col-xl-6">
+                        <div class="hero-content hero-animated-content">
+                           <h2 class="text-white mb-4" data-fade-in-up data-animation-delay="300ms">Travel and See the
+                              World of Your Dreams.</h2>
+                           <p class="text-white" data-fade-in-up data-animation-delay="600ms">Welcome to our Vitour
+                              website! We are a professional and reliable tours
+                              company that offers a wide range of are many variations of passages.</p>
+                           <a class="btn btn-info" href="contact.html" data-fade-in-up data-animation-delay="900ms">Book
+                              Your Stay <i class="icon-arrow-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Slide Item -->
+            <div class="swiper-slide hero-swiper-slide" style="background-image: url('assets/img/bg-img/4.jpg');">
+               <div class="container">
+                  <div class="row">
+                     <!-- Hero Content -->
+                     <div class="col-9 col-lg-7 col-xl-6">
+                        <div class="hero-content hero-animated-content">
+                           <h2 class="text-white mb-4" data-fade-in-up data-animation-delay="300ms">Travel and See the
+                              World of Your Dreams.</h2>
+                           <p class="text-white" data-fade-in-up data-animation-delay="600ms">Welcome to our Vitour
+                              website! We are a professional and reliable tours
+                              company that offers a wide range of are many variations of passages.</p>
+                           <a class="btn btn-info" href="contact.html" data-fade-in-up data-animation-delay="900ms">Book
+                              Your Stay <i class="icon-arrow-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Slide Item -->
+            <div class="swiper-slide hero-swiper-slide" style="background-image: url('assets/img/bg-img/5.jpg');">
+               <div class="container">
+                  <div class="row">
+                     <!-- Hero Content -->
+                     <div class="col-9 col-lg-7 col-xl-6">
+                        <div class="hero-content hero-animated-content">
+                           <h2 class="text-white mb-4" data-fade-in-up data-animation-delay="300ms">Travel and See the
+                              World of Your Dreams.</h2>
+                           <p class="text-white" data-fade-in-up data-animation-delay="600ms">Welcome to our Vitour
+                              website! We are a professional and reliable tours
+                              company that offers a wide range of are many variations of passages.</p>
+                           <a class="btn btn-info" href="contact.html" data-fade-in-up data-animation-delay="900ms">Book
+                              Your Stay <i class="icon-arrow-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Hero Navigation -->
+      <div class="hero-navigation">
+         <button class="hero-button-prev mb-2">
+            <i class="icon-arrow-up"></i>
+         </button>
+
+         <!-- Hero Pagination -->
+         <div class="hero-pagination"></div>
+
+         <button class="hero-button-next mt-2">
+            <i class="icon-arrow-down"></i>
+         </button>
+      </div>
+   </section>
+
+   <!-- Hero Search Form -->
+   <div class="container">
+      <div class="search-form-container">
+         <div class="hero-two-search-form">
+            <form action="#">
+               <div class="form-group">
+                  <label for="destination" class="form-label">Destination <i class="ti ti-chevron-down"></i></label>
+                  <select name="destination" id="destination" class="touria-select">
+                     <option value="new-york" selected>New York City</option>
+                     <option value="paris">Paris</option>
+                     <option value="madrid">Madrid</option>
+                     <option value="tokyo">Tokyo</option>
+                     <option value="rome">Rome</option>
+                     <option value="milan">Milan</option>
+                     <option value="amsterdam">Amsterdam</option>
+                     <option value="sydney">Sydney</option>
+                     <option value="singapore">Singapore</option>
+                     <option value="barcelona">Barcelona</option>
+                     <option value="dubai">Dubai</option>
+                     <option value="berlin">Berlin</option>
+                     <option value="london">London</option>
+                     <option value="istanbul">Istanbul</option>
+                     <option value="bangkok">Bangkok</option>
+                     <option value="hong-kong">Hong Kong</option>
+                     <option value="los-angeles">Los Angeles</option>
+                     <option value="vienna">Vienna</option>
+                     <option value="seoul">Seoul</option>
+                     <option value="osaka">Osaka</option>
+                     <option value="prague">Prague</option>
+                     <option value="lisbon">Lisbon</option>
+                     <option value="cairo">Cairo</option>
+                     <option value="san-francisco">San Francisco</option>
+                     <option value="budapest">Budapest</option>
+                     <option value="shanghai">Shanghai</option>
+                     <option value="moscow">Moscow</option>
+                     <option value="florence">Florence</option>
+                     <option value="toronto">Toronto</option>
+                     <option value="mexico-city">Mexico City</option>
+                     <option value="athens">Athens</option>
+                     <option value="brussels">Brussels</option>
+                     <option value="stockholm">Stockholm</option>
+                     <option value="dubrovnik">Dubrovnik</option>
+                     <option value="melbourne">Melbourne</option>
+                     <option value="cape-town">Cape Town</option>
+                     <option value="mumbai">Mumbai</option>
+                     <option value="hanoi">Hanoi</option>
+                     <option value="kuala-lumpur">Kuala Lumpur</option>
+                     <option value="jakarta">Jakarta</option>
+                     <option value="warsaw">Warsaw</option>
+                     <option value="bucharest">Bucharest</option>
+                     <option value="oslo">Oslo</option>
+                     <option value="helsinki">Helsinki</option>
+                     <option value="copenhagen">Copenhagen</option>
+                     <option value="zurich">Zurich</option>
+                     <option value="santiago">Santiago</option>
+                     <option value="buenos-aires">Buenos Aires</option>
+                     <option value="doha">Doha</option>
+                  </select>
+               </div>
+   
+               <div class="vr-line d-none d-lg-block"></div>
+   
+               <div class="form-group">
+                  <label for="check-in" class="form-label">Check In <i class="ti ti-chevron-down"></i></label>
+                  <input type="date" id="check-in" class="form-control">
+               </div>
+   
+               <div class="vr-line d-none d-lg-block"></div>
+   
+               <div class="form-group">
+                  <label for="check-out" class="form-label">Check Out <i class="ti ti-chevron-down"></i></label>
+                  <input type="date" id="check-out" class="form-control">
+               </div>
+   
+               <div class="vr-line d-none d-lg-block"></div>
+   
+               <div class="form-group">
+                  <label for="tour-type" class="form-label">Tour Type <i class="ti ti-chevron-down"></i></label>
+                  <select name="tour-type" id="tour-type" class="touria-select2">
+                     <option value="family-tour" selected>Family Tour</option>
+                     <option value="adventure-tour">Adventure Tour</option>
+                     <option value="solo-tour">Solo Tour</option>
+                  </select>
+               </div>
+   
+               <button type="submit" class="btn btn-info">Search Now</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <!-- Premier Destination Section -->
+   <section class="premier-destination-section">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-4 g-md-5 align-items-end">
+            <div class="col-12 col-sm-6">
+               <!-- Section Heading -->
+               <div class="section-heading">
+                  <span class="sub-title text-info">Popular Destination</span>
+                  <h2 class="mb-0">Premier Destinations</h2>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+               <div class="premier-destination-navigation justify-content-sm-end">
+                  <div class="premier-destination-button-prev">
+                     <i class="icon-arrow-left"></i>
+                  </div>
+                  <div class="premier-destination-button-next">
+                     <i class="icon-arrow-right"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="divider-sm"></div>
+
+         <div class="swiper premier-destination-swiper">
+            <div class="swiper-wrapper">
+               <!-- Project Card -->
+               <div class="swiper-slide premier-destination-card slide-expand"
+                  style="background-image: url('assets/img/bg-img/68.jpg');">
+                  <!-- Project Content -->
+                  <div class="premier-destination-content">
+                     <h3 class="text-white">Turkey, Istanbul</h3>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$1200</span></p>
+                  </div>
+                  <!-- Project Button -->
+                  <a href="#" class="btn">
+                     <i class="ti ti-plane-tilt"></i>
+                  </a>
+               </div>
+
+               <!-- Project Card -->
+               <div class="swiper-slide premier-destination-card"
+                  style="background-image: url('assets/img/bg-img/1.jpg');">
+                  <!-- Project Content -->
+                  <div class="premier-destination-content">
+                     <h3 class="text-white">Turkey, Istanbul</h3>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$1200</span></p>
+                  </div>
+                  <!-- Project Button -->
+                  <a href="#" class="btn">
+                     <i class="ti ti-plane-tilt"></i>
+                  </a>
+               </div>
+
+               <!-- Project Card -->
+               <div class="swiper-slide premier-destination-card"
+                  style="background-image: url('assets/img/bg-img/2.jpg');">
+                  <!-- Project Content -->
+                  <div class="premier-destination-content">
+                     <h3 class="text-white">Turkey, Istanbul</h3>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$1200</span></p>
+                  </div>
+                  <!-- Project Button -->
+                  <a href="#" class="btn">
+                     <i class="ti ti-plane-tilt"></i>
+                  </a>
+               </div>
+
+               <!-- Project Card -->
+               <div class="swiper-slide premier-destination-card"
+                  style="background-image: url('assets/img/bg-img/3.jpg');">
+                  <!-- Project Content -->
+                  <div class="premier-destination-content">
+                     <h3 class="text-white">Turkey, Istanbul</h3>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$1200</span></p>
+                  </div>
+                  <!-- Project Button -->
+                  <a href="#" class="btn">
+                     <i class="ti ti-plane-tilt"></i>
+                  </a>
+               </div>
+
+               <!-- Project Card -->
+               <div class="swiper-slide premier-destination-card slide-expand"
+                  style="background-image: url('assets/img/bg-img/68.jpg');">
+                  <!-- Project Content -->
+                  <div class="premier-destination-content">
+                     <h3 class="text-white">Turkey, Istanbul</h3>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$1200</span></p>
+                  </div>
+                  <!-- Project Button -->
+                  <a href="#" class="btn">
+                     <i class="ti ti-plane-tilt"></i>
+                  </a>
+               </div>
+
+               <!-- Project Card -->
+               <div class="swiper-slide premier-destination-card"
+                  style="background-image: url('assets/img/bg-img/1.jpg');">
+                  <!-- Project Content -->
+                  <div class="premier-destination-content">
+                     <h3 class="text-white">Turkey, Istanbul</h3>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$1200</span></p>
+                  </div>
+                  <!-- Project Button -->
+                  <a href="#" class="btn">
+                     <i class="ti ti-plane-tilt"></i>
+                  </a>
+               </div>
+
+               <!-- Project Card -->
+               <div class="swiper-slide premier-destination-card"
+                  style="background-image: url('assets/img/bg-img/2.jpg');">
+                  <!-- Project Content -->
+                  <div class="premier-destination-content">
+                     <h3 class="text-white">Turkey, Istanbul</h3>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$1200</span></p>
+                  </div>
+                  <!-- Project Button -->
+                  <a href="#" class="btn">
+                     <i class="ti ti-plane-tilt"></i>
+                  </a>
+               </div>
+
+               <!-- Project Card -->
+               <div class="swiper-slide premier-destination-card"
+                  style="background-image: url('assets/img/bg-img/3.jpg');">
+                  <!-- Project Content -->
+                  <div class="premier-destination-content">
+                     <h3 class="text-white">Turkey, Istanbul</h3>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$1200</span></p>
+                  </div>
+                  <!-- Project Button -->
+                  <a href="#" class="btn">
+                     <i class="ti ti-plane-tilt"></i>
+                  </a>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </section>
+
+   <!-- Popup Video Container -->
+   <div id="videoPopup" class="video-popup-iframe">
+      <div class="video-content">
+         <span class="close-btn" id="videoCloseButton"><i class="ti ti-x"></i></span>
+         <div class="ratio ratio-16x9">
+            <iframe id="videoFrame" allowfullscreen></iframe>
+         </div>
+      </div>
+   </div>
+
+   <!-- About Section -->
+   <section class="about-section theme-two bg-secondary px-3 mx-3 mx-lg-4 mx-xxl-5">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-5 align-items-center">
+            <div class="col-12 col-lg-6">
+               <!-- About Video -->
+               <div class="about-video-content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                  <img src="assets/img/bg-img/69.jpg" alt="">
+
+                  <!-- Play Video -->
+                  <div class="play-video-btn video-btn" data-video="https://youtu.be/zCSmY_WjvPs">
+                     <div class="icon">
+                        <i class="ti ti-player-play-filled"></i>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- About Images -->
+               <div class="about-images d-flex px-sm-5 mt-5 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                  <div class="mt-auto">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                        viewBox="0 0 70 70" fill="none">
+                        <path
+                           d="M35 0L46.1369 23.8631L70 35L46.1369 46.1369L35 70L23.8631 46.1369L0 35L23.8631 23.8631L35 0Z"
+                           fill="#02A5CE" />
+                     </svg>
+                  </div>
+
+                  <div>
+                     <img class="w-100 rounded-circle" src="assets/img/bg-img/70.png" alt="">
+                  </div>
+
+                  <div>
+                     <svg class="rotatingImage" xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                        viewBox="0 0 70 70" fill="none">
+                        <path
+                           d="M35 0L46.1369 23.8631L70 35L46.1369 46.1369L35 70L23.8631 46.1369L0 35L23.8631 23.8631L35 0Z"
+                           fill="#1C3637" />
+                     </svg>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+               <!-- About Content -->
+               <div class="about-content ps-md-4">
+                  <div class="section-heading">
+                     <span class="sub-title text-info">Get To Know Our Agency</span>
+                     <h2 class="mb-4">Why You Should Choose Our Company to Travel</h2>
+                     <p class="mb-5">At Express Travel, we believe in the transformative power of travel. As avid
+                        explorers ourselves, we understand the desire to uncover. We are committed to making travel
+                        accessible, enjoyable, and safe for everyone.</p>
+
+                     <!-- About List -->
+                     <div class="about-list ps-0 d-flex flex-wrap flex-sm-nowrap flex-lg-wrap flex-xl-nowrap gap-3 list-unstyled mb-5">
+                        <div class="icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                              fill="none">
+                              <g clip-path="url(#clip0_1_17247)">
+                                 <path
+                                    d="M24.0761 30.8035C20.3845 31.4102 17.2626 32.2913 14.9386 33.3027C14.1168 33.6608 13.3623 34.7297 13.2898 35.6239C13.2431 36.213 13.2188 36.81 13.2188 37.4108C13.2188 38.0112 13.2436 38.6081 13.2898 39.1973C13.3618 40.091 14.1168 41.1603 14.9386 41.5179C17.2626 42.5308 20.3831 43.4109 24.0761 44.0181C24.9601 44.163 25.6145 43.535 25.5527 42.6417C25.434 40.9064 25.3717 39.152 25.3717 37.4118C25.3717 35.6711 25.434 33.9157 25.5527 32.1818C25.6145 31.2871 24.9606 30.6595 24.0761 30.8035Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M27.3028 57.9883C28.1396 58.3123 28.5482 57.8516 28.2456 57.0075C27.3461 54.4971 26.6528 51.5333 26.1721 48.3544C26.0393 47.468 25.2303 46.658 24.3429 46.5247C21.1645 46.044 18.2007 45.3498 15.6898 44.4502C14.8462 44.1486 14.3845 44.5577 14.7086 45.3936C16.948 51.1597 21.5391 55.7513 27.3028 57.9883Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M31.1829 17.0594C30.17 19.3844 29.2894 22.5034 28.6832 26.1965C28.5373 27.0815 29.1639 27.7353 30.0581 27.6735C31.7935 27.5539 33.5483 27.4926 35.289 27.4926C37.0302 27.4926 38.7836 27.5539 40.5185 27.6735C41.4127 27.7353 42.0398 27.0815 41.8943 26.1965C41.2882 22.5054 40.4066 19.3844 39.3956 17.0594C39.0376 16.2382 37.9687 15.4836 37.0745 15.4106C36.4858 15.3625 35.8889 15.3396 35.2885 15.3396C34.6867 15.3396 34.0908 15.3639 33.5011 15.4106C32.6089 15.4841 31.5405 16.2387 31.1829 17.0594Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M27.3029 16.8322C21.5393 19.0706 16.9481 23.6618 14.7092 29.4274C14.3862 30.2632 14.8464 30.6719 15.6905 30.3702C18.2014 29.4697 21.1652 28.7774 24.343 28.2967C25.2299 28.163 26.0395 27.3529 26.1728 26.4665C26.6534 23.2877 27.3467 20.3239 28.2463 17.8135C28.5494 16.9694 28.1397 16.5087 27.3029 16.8322Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M44.4037 26.465C44.5365 27.3509 45.3465 28.161 46.2334 28.2952C49.4113 28.7754 52.3756 29.4682 54.8859 30.3673C55.73 30.6699 56.1922 30.2602 55.8667 29.4244C53.6283 23.6598 49.0381 19.0686 43.272 16.8302C42.4367 16.5067 42.028 16.9679 42.3292 17.8115C43.2297 20.3223 43.923 23.2866 44.4037 26.465Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M57.2859 35.6254C57.2144 34.7312 56.4579 33.6618 55.6367 33.3042C53.3126 32.2918 50.1907 31.4122 46.4991 30.806C45.6156 30.6601 44.9612 31.2872 45.0225 32.1819C45.1417 33.9163 45.203 35.6721 45.203 37.4118C45.203 39.1525 45.1417 40.9079 45.0225 42.6432C44.9612 43.5374 45.6156 44.165 46.4991 44.0186C50.1907 43.4124 53.3126 42.5309 55.6367 41.5194C56.4594 41.1618 57.2134 40.0905 57.2859 39.1983C57.3351 38.6081 57.357 38.0122 57.357 37.4104C57.3565 36.8105 57.3321 36.2131 57.2859 35.6254Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M42.7692 37.411C42.7692 35.4985 42.6981 33.6537 42.5644 31.8891C42.4977 30.9959 41.7028 30.2004 40.81 30.1343C39.0454 30.0019 37.2021 29.9294 35.2877 29.9294C33.3762 29.9294 31.5309 30.001 29.7668 30.1343C28.8731 30.2014 28.0776 30.9959 28.0105 31.8891C27.8782 33.6532 27.8057 35.4985 27.8057 37.411C27.8057 39.3229 27.8777 41.1683 28.0105 42.9328C28.0786 43.8256 28.8731 44.6234 29.7668 44.6886C31.5304 44.8205 33.3757 44.8934 35.2877 44.8934C37.1996 44.8934 39.0454 44.821 40.81 44.6886C41.7032 44.62 42.4987 43.8256 42.5644 42.9328C42.6986 41.1683 42.7692 39.3234 42.7692 37.411Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M54.8857 44.4522C52.3753 45.3537 49.4115 46.046 46.2327 46.5267C45.3462 46.659 44.5367 47.4695 44.4029 48.3564C43.9222 51.5338 43.229 54.4991 42.3299 57.0095C42.0273 57.8526 42.4364 58.3157 43.2718 57.9903C49.0379 55.7518 53.629 51.1612 55.867 45.3965C56.191 44.5593 55.7298 44.1506 54.8857 44.4522Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M40.5175 47.1444C38.7831 47.2636 37.0278 47.3258 35.2856 47.3258C33.5454 47.3258 31.793 47.2636 30.0566 47.1444C29.1629 47.0831 28.5353 47.7374 28.6813 48.6214C29.2884 52.314 30.169 55.4344 31.18 57.759C31.5375 58.5807 32.6074 59.3353 33.5006 59.4078C34.0898 59.4564 34.6857 59.4793 35.288 59.4793C35.8884 59.4793 36.4848 59.4535 37.0735 59.4078C37.9682 59.3362 39.0366 58.5812 39.3946 57.759C40.4075 55.4344 41.2876 52.314 41.8943 48.6214C42.0383 47.7369 41.4112 47.0831 40.5175 47.1444Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M18.2709 10.8103C18.4446 10.9431 18.5905 10.8915 18.6713 10.8346C18.6129 10.909 18.5117 11.056 18.358 11.3235C18.358 11.3235 17.8116 12.1448 17.9931 12.4196L17.9965 12.4245C18.1804 12.7033 19.1471 12.5233 19.1471 12.5233C19.4526 12.4868 19.6273 12.4518 19.7216 12.4284C19.6355 12.4805 19.5309 12.5938 19.5849 12.804L20.0768 14.4537C20.0846 14.4785 20.0948 14.5004 20.1045 14.5218L21.4001 13.4087L21.5062 12.0071C21.5139 11.8996 21.5363 11.7668 21.5363 11.7668C21.5363 11.7668 21.7947 11.5906 21.8754 11.5542L26.4466 8.74506L28.8359 15.6671C28.9011 15.852 29.0733 15.8996 29.2227 15.7722L30.4783 14.697C30.6277 14.5686 30.7216 14.3083 30.689 14.1122L29.4464 6.74989L33.8226 3.68732C34.6287 3.12054 35.2714 2.25115 35.2568 1.74081C35.251 1.54815 35.1858 1.35257 35.0807 1.17451L35.0783 1.17013C34.9566 1.00326 34.8029 0.865579 34.6258 0.785305C34.1656 0.572215 33.1103 0.816928 32.2716 1.33409L27.731 4.14415L21.4565 0.0915456C21.2897 -0.0145131 21.0148 -0.0315408 20.8372 0.055544L19.3543 0.783846C19.1772 0.870931 19.1524 1.04753 19.2969 1.18084L24.7122 6.1111L20.3254 9.19994C20.2612 9.26027 19.9965 9.42909 19.9965 9.42909C19.9965 9.42909 19.8647 9.39552 19.7625 9.36L18.4329 8.90366L16.8994 9.65531C16.9155 9.67283 16.9306 9.69083 16.9524 9.70639L18.2709 10.8103Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M3.83105 33.5151C3.90549 32.8364 4.04609 32.183 4.19448 31.4961C4.24994 31.2392 4.30491 30.9833 4.35648 30.7274C4.4134 30.3927 4.51314 30.0799 4.6192 29.7486C4.67223 29.5827 4.72477 29.4172 4.77293 29.2509L5.22587 27.804C5.36355 27.4814 5.49491 27.1584 5.62578 26.8378C5.87925 26.2165 6.11813 25.6298 6.38911 25.0742L7.06049 23.7956C7.12179 23.6828 7.18601 23.5592 7.24974 23.4356C7.39861 23.1491 7.53873 22.8781 7.69636 22.6528C7.89339 22.3551 8.06902 22.0788 8.24222 21.8058C8.55942 21.3062 8.8596 20.8338 9.1768 20.4037L10.6762 18.4747C11.008 18.103 11.3573 17.7279 11.693 17.3669L12.1732 16.8493C12.5493 16.4163 12.956 16.0509 13.3491 15.6977L14.8101 14.3827C15.3141 13.9842 15.7466 13.6583 16.0998 13.3922C16.217 13.3036 16.3255 13.2219 16.4253 13.146L17.0324 13.9808C16.921 14.0587 16.8009 14.1419 16.67 14.2319C16.2944 14.4912 15.8366 14.8074 15.3228 15.1796L15.2693 15.2214L13.8964 16.3676C13.5213 16.6756 13.0966 17.0249 12.6801 17.4701L11.2308 18.9131L11.1754 18.9734L9.68617 20.7326C9.33151 21.1709 9.01577 21.6248 8.71073 22.0642C8.53704 22.3142 8.36044 22.5682 8.17605 22.8212C7.96004 23.0999 7.78393 23.4089 7.61414 23.7066C7.55478 23.8102 7.49543 23.9148 7.43364 24.018L6.74134 25.2094C6.43533 25.7752 6.17553 26.3415 5.92498 26.8889C5.78146 27.2022 5.63648 27.5184 5.48323 27.8346L5.44334 27.93L4.94856 29.3107C4.89602 29.4669 4.84591 29.6021 4.79629 29.7364C4.67223 30.0726 4.53114 30.454 4.44649 30.8665C4.3954 31.0743 4.33216 31.3161 4.26891 31.5593C4.10496 32.1879 3.93663 32.834 3.83105 33.5151Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M16.6273 11.7693C16.6273 11.7693 16.4054 11.9381 15.9885 12.2548C15.572 12.5759 14.9605 13.023 14.1826 13.6384C13.7958 13.9868 13.3672 14.3726 12.9006 14.792C12.4365 15.2123 11.9203 15.6565 11.4576 16.1897C10.977 16.7117 10.4574 17.2586 9.92854 17.8506C9.44106 18.4782 8.92877 19.1379 8.39361 19.8263C7.87694 20.5264 7.41573 21.3131 6.89954 22.0944C6.63002 22.4788 6.43055 22.9157 6.19995 23.3418C5.97421 23.7705 5.74604 24.2059 5.51494 24.6476C5.07855 25.5428 4.72291 26.508 4.31181 27.4669C4.15564 27.9666 3.99801 28.4716 3.83795 28.9814C3.69005 29.4937 3.49351 29.9968 3.40253 30.5353C3.18846 31.6013 2.90726 32.6711 2.82942 33.7906C2.77591 34.3481 2.68979 34.9032 2.66401 35.4666C2.65817 36.0319 2.65331 36.6001 2.64747 37.1698C2.65136 37.4549 2.62995 37.7395 2.65477 38.0251L2.73553 38.8814C2.79634 39.4525 2.83088 40.0266 2.91505 40.5953L3.26485 42.2908C3.33101 42.571 3.36409 42.86 3.4575 43.1335L3.72508 43.9581C3.91287 44.5035 4.06369 45.0625 4.28262 45.5942L5.00168 47.1637C5.2172 47.6964 5.52467 48.1805 5.82436 48.666C6.13038 49.1588 6.39358 49.6259 6.73316 50.1314C7.06496 50.5697 7.3953 51.0056 7.72417 51.4406C8.09003 51.8663 8.47388 52.2842 8.84509 52.7011C9.62399 53.4917 10.416 54.2365 11.2698 54.8841C12.958 56.1981 14.7664 57.2164 16.5543 57.9841C18.3529 58.7382 20.134 59.2081 21.7896 59.5404C22.6264 59.6591 23.4204 59.8226 24.189 59.8644C24.5719 59.897 24.9451 59.9296 25.307 59.9598C25.6705 59.969 26.0232 59.9759 26.3652 59.9836C26.6352 59.9861 26.8974 59.9982 27.1524 59.9982C27.221 59.9982 27.2896 59.9973 27.3572 59.9953C27.6754 59.9807 27.9828 59.9666 28.2786 59.953C28.5735 59.9399 28.8566 59.9267 29.1261 59.9146C29.3952 59.8844 29.652 59.8567 29.8953 59.8294C30.3813 59.771 30.8177 59.738 31.1918 59.6762C31.5669 59.6105 31.8846 59.5545 32.143 59.5098C32.6587 59.4193 32.9335 59.3711 32.9335 59.3711C32.9335 59.3711 32.6567 59.4076 32.1376 59.4762C31.8788 59.5103 31.5592 59.5521 31.1831 59.6022C30.807 59.6494 30.3701 59.663 29.8846 59.7005C29.6413 59.717 29.3859 59.7341 29.1174 59.7521C28.8474 59.7535 28.5662 59.754 28.2728 59.755C27.9794 59.7564 27.6749 59.7569 27.3577 59.7584C27.0414 59.755 26.714 59.7234 26.3759 59.7063C26.0387 59.6844 25.6899 59.6621 25.3314 59.6387C24.9752 59.5925 24.6089 59.5458 24.2323 59.4971C23.4763 59.4251 22.7013 59.2291 21.8859 59.0792C20.2746 58.6837 18.5538 58.1495 16.8399 57.3448C15.1356 56.5255 13.4348 55.4693 11.8726 54.1441C11.084 53.4922 10.3542 52.742 9.65318 51.9694C9.32527 51.569 8.99493 51.1662 8.66313 50.7609C8.35274 50.3133 8.04138 49.8628 7.72807 49.4118C6.68159 47.6074 5.65749 45.6399 5.17488 43.5368L4.95595 42.7588C4.87957 42.5015 4.86156 42.2281 4.81048 41.9639L4.55166 40.375C4.4962 39.8417 4.48841 39.3046 4.45387 38.7729L4.41057 37.9765C4.39792 37.7118 4.43198 37.4457 4.43976 37.181C4.46652 36.6527 4.49328 36.1268 4.52052 35.6033C4.56674 35.0822 4.67134 34.5675 4.7414 34.0538C4.85281 33.0219 5.16271 32.0372 5.39964 31.0613C5.50084 30.5674 5.7076 30.1067 5.86426 29.6387C6.03161 29.1741 6.19605 28.7129 6.35952 28.257C6.7823 27.3837 7.14474 26.5071 7.58309 25.6965C7.81515 25.2976 8.04332 24.904 8.26858 24.5163C8.49869 24.1324 8.69573 23.7374 8.96234 23.3924C9.47414 22.6914 9.92465 21.984 10.4296 21.3588C10.9478 20.7458 11.4455 20.1586 11.9188 19.6001C12.437 19.083 12.9283 18.5935 13.391 18.1333C13.841 17.6531 14.3115 17.2892 14.7347 16.9365C15.1565 16.5828 15.5448 16.2588 15.8951 15.9659C16.6735 15.402 17.3215 14.9686 17.7453 14.6684C18.1753 14.3702 18.4045 14.2101 18.4045 14.2101L16.6273 11.7693Z"
+                                    fill="#02A5CE" />
+                              </g>
+                              <defs>
+                                 <clipPath id="clip0_1_17247">
+                                    <rect width="60" height="60" fill="white" />
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                        </div>
+
+                        <div>
+                           <h4>Global Pathway</h4>
+                           <p class="mb-0">There are many variations of passages of available but the majority
+                              variations. Many variations of passages</p>
+                        </div>
+
+                        <ul class="list-unstyled d-flex gap-3 flex-column">
+                           <li><i class="ti ti-circle-check-filled"></i> 450+ Local Guides</li>
+                           <li><i class="ti ti-circle-check-filled"></i> Crafted Experiences</li>
+                           <li><i class="ti ti-circle-check-filled"></i> 97% Happy Travellers</li>
+                        </ul>
+                     </div>
+
+                     <!-- Button -->
+                     <a class="btn btn-info" href="about-us.html">More About Us <i class="icon-arrow-right"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </section>
+
+   <!-- Featured Flight Section -->
+   <section class="featured-flight-section">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+               <div class="section-heading text-center">
+                  <span class="sub-title text-info">Airlines Flight </span>
+                  <h2 class="mb-0">Featured Flight Deals</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="divider-sm"></div>
+
+      <div class="container">
+         <div class="row g-4">
+
+            <!-- Flight Card -->
+            <div class="col-12 col-sm-6 col-lg-3">
+               <div class="flight-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                  <!-- Flight Image -->
+                  <div class="flight-img">
+                     <img src="assets/img/bg-img/71.jpg" alt="">
+                     <span class="badge bg-info"><i class="ti ti-map-pin"></i> Nederlands</span>
+                  </div>
+                  <!-- Flight Content -->
+                  <div class="flight-content d-flex gap-3 align-items-end">
+                     <div>
+                        <h5 class="mb-3">Bathing and Kayaking at Nonrival Beach</h5>
+                        <h5 class="mb-0 flight-price">$49.00<span>/Per day</span></h5>
+                     </div>
+                     <div>
+                        <a href="#"><i class="icon-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Flight Card -->
+            <div class="col-12 col-sm-6 col-lg-3">
+               <div class="flight-card wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                  <!-- Flight Image -->
+                  <div class="flight-img">
+                     <img src="assets/img/bg-img/72.jpg" alt="">
+                     <span class="badge bg-info"><i class="ti ti-map-pin-filled"></i> India</span>
+                  </div>
+                  <!-- Flight Content -->
+                  <div class="flight-content d-flex gap-3 align-items-end">
+                     <div>
+                        <h5 class="mb-3">Best Time Ever to Explore Molina's Nature</h5>
+                        <h5 class="mb-0 flight-price">$59.00<span>/Per day</span></h5>
+                     </div>
+                     <div>
+                        <a href="#"><i class="icon-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Flight Card -->
+            <div class="col-12 col-sm-6 col-lg-3">
+               <div class="flight-card wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+                  <!-- Flight Image -->
+                  <div class="flight-img">
+                     <img src="assets/img/bg-img/73.jpg" alt="">
+                     <span class="badge bg-info"><i class="ti ti-map-pin-filled"></i> Dubai</span>
+                  </div>
+                  <!-- Flight Content -->
+                  <div class="flight-content d-flex gap-3 align-items-end">
+                     <div>
+                        <h5 class="mb-3">5 Best Tips for a Amazing Molina Trip</h5>
+                        <h5 class="mb-0 flight-price">$69.00<span>/Per day</span></h5>
+                     </div>
+                     <div>
+                        <a href="#"><i class="icon-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Flight Card -->
+            <div class="col-12 col-sm-6 col-lg-3">
+               <div class="flight-card wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1000ms">
+                  <!-- Flight Image -->
+                  <div class="flight-img">
+                     <img src="assets/img/bg-img/74.jpg" alt="">
+                     <span class="badge bg-info"><i class="ti ti-map-pin-filled"></i> Bangladesh</span>
+                  </div>
+                  <!-- Flight Content -->
+                  <div class="flight-content d-flex gap-3 align-items-end">
+                     <div>
+                        <h5 class="mb-3">Discover Beautiful Moliva: Nature's Paradise</h5>
+                        <h5 class="mb-0 flight-price">$79.00<span>/Per day</span></h5>
+                     </div>
+                     <div>
+                        <a href="#"><i class="icon-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </section>
+
+   <!-- Why Choose Section -->
+   <section class="why-choose-section bg-info px-3 mx-3 mx-lg-4 mx-xxl-5">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-5">
+            <div class="col-12 col-lg-6">
+               <img src="assets/img/bg-img/81.jpg" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+               <div class="section-heading ms-xxl-5">
+                  <span class="sub-title text-white">Why Choose Us</span>
+                  <h2 class="mb-3 text-white">Navigate to Every Corner of the Planet</h2>
+                  <p class="mb-4 text-white">Monotonectally synergize granular markets and front Collaboratively
+                     visualize strat fomediaries after based models, Synergistically task state of the art
+                     infrastructures.</p>
+                  <!-- Years of Experience -->
+                  <div class="years-of-experience counter">15</div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="divider-sm"></div>
+
+      <div class="container">
+         <div class="row g-4 align-items-end">
+            <!-- Why Choose Card -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+               <div class="why-choose-card">
+                  <div class="icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <g clip-path="url(#clip0_1_17447)">
+                           <path
+                              d="M24.4445 11.2037C24.5971 11.3562 24.797 11.4325 24.9969 11.4325C25.1969 11.4325 25.3969 11.3562 25.5494 11.2037C25.8544 10.8986 25.8544 10.4039 25.5494 10.0987L25.5388 10.0882C25.2337 9.78311 24.739 9.78311 24.4339 10.0882C24.1288 10.3933 24.1288 10.8879 24.4339 11.1931L24.4445 11.2037Z"
+                              fill="#1C3637" />
+                           <path
+                              d="M37.0481 18.5938L39.7712 15.8707C39.9946 15.6473 40.0614 15.3112 39.9405 15.0193C39.8195 14.7273 39.5347 14.537 39.2187 14.537H33.5741C32.8363 11.5167 31.2877 8.76461 29.0741 6.55086C25.8574 3.33406 21.5805 1.5625 17.0313 1.5625C12.482 1.5625 8.20508 3.33406 4.98836 6.55086C1.77156 9.76766 0 14.0445 0 18.5938C0 23.143 1.77156 27.4199 4.98836 30.6366C5.94492 31.5932 6.99578 32.4209 8.11914 33.1132L5.76547 37.2714C5.62859 37.5133 5.63047 37.8097 5.77047 38.0497C5.91039 38.2898 6.16734 38.4375 6.44531 38.4375H10.4688C10.7502 38.4375 11.01 38.2861 11.1487 38.0411L12.8129 35.1009C14.175 35.4464 15.5894 35.625 17.0313 35.625C18.4731 35.625 19.8875 35.4464 21.2496 35.1009L22.9138 38.0411C23.0525 38.2861 23.3123 38.4375 23.5938 38.4375H27.6172C27.8952 38.4375 28.1521 38.2898 28.2921 38.0498C28.4321 37.8097 28.434 37.5133 28.2971 37.2715L25.9434 33.1133C27.0668 32.4209 28.1177 31.5933 29.0742 30.6367C31.287 28.4239 32.8363 25.6706 33.5741 22.6505H39.2188C39.5347 22.6505 39.8196 22.4602 39.9406 22.1683C40.0615 21.8764 39.9946 21.5403 39.7713 21.3169L37.0481 18.5938ZM35.6196 17.8125H30.1673L31.8803 16.0995H37.3327L35.6196 17.8125ZM10.0132 36.875H7.78524L9.4857 33.8709C10.0693 34.1598 10.6684 34.4153 11.2814 34.6345L10.0132 36.875ZM26.2773 36.875H24.0493L22.7811 34.6345C23.3941 34.4153 23.9932 34.1598 24.5768 33.8709L26.2773 36.875ZM27.9693 29.5318C26.9373 30.5638 25.7846 31.4312 24.5438 32.1226C24.5285 32.13 24.5131 32.137 24.498 32.1455C24.4885 32.1509 24.4799 32.1571 24.4708 32.1628C23.519 32.6864 22.516 33.1068 21.4753 33.4173C21.4344 33.4254 21.3939 33.4374 21.354 33.4524C19.967 33.8538 18.5152 34.0625 17.0313 34.0625C15.5473 34.0625 14.0955 33.8538 12.7085 33.4525C12.6685 33.4375 12.628 33.4255 12.587 33.4173C11.5464 33.1069 10.5434 32.6865 9.59172 32.1629C9.58258 32.1572 9.57399 32.151 9.56453 32.1456C9.54945 32.1371 9.53406 32.1301 9.51875 32.1227C8.27797 31.4313 7.12531 30.5639 6.09328 29.5318C3.17156 26.6102 1.5625 22.7256 1.5625 18.5938C1.5625 14.4619 3.17156 10.5773 6.0932 7.6557C9.01484 4.73406 12.8994 3.125 17.0313 3.125C21.1631 3.125 25.0477 4.73406 27.9693 7.6557C29.8891 9.57547 31.2583 11.9404 31.9613 14.537H31.5568C31.3496 14.537 31.1509 14.6194 31.0044 14.7659L28.9309 16.8394C28.7216 15.419 28.2624 14.0379 27.569 12.7819C27.3605 12.4041 26.8852 12.2671 26.5074 12.4755C26.1297 12.6841 25.9926 13.1594 26.2011 13.5371C26.9427 14.8804 27.357 16.3409 27.4631 17.8126H24.0184C23.8445 16.2301 23.1452 14.7641 22.0031 13.622C20.6751 12.2939 18.9094 11.5625 17.0313 11.5625C15.1531 11.5625 13.3874 12.2939 12.0595 13.6219C10.7314 14.95 10 16.7156 10 18.5938C10 20.4719 10.7314 22.2376 12.0594 23.5655C13.3874 24.8936 15.1531 25.625 17.0313 25.625C18.9094 25.625 20.6751 24.8936 22.003 23.5656C23.1451 22.4236 23.8444 20.9576 24.0183 19.375H27.4596C27.2733 21.8172 26.2427 24.1872 24.4338 25.9963C22.4565 27.9736 19.8275 29.0625 17.0313 29.0625C14.235 29.0625 11.606 27.9736 9.62875 25.9963C7.65141 24.019 6.5625 21.3901 6.5625 18.5938C6.5625 15.7974 7.65141 13.1685 9.62875 11.1912C12.9086 7.91141 18.032 7.18469 22.088 9.42398C22.4656 9.63242 22.9409 9.49539 23.1495 9.11766C23.358 8.73992 23.2209 8.26469 22.8432 8.05609C20.6053 6.82055 17.9702 6.32812 15.4236 6.66984C12.792 7.02281 10.406 8.20422 8.52391 10.0864C6.25149 12.3588 5 15.3801 5 18.5938C5 21.8074 6.25149 24.8288 8.52383 27.1011C10.7963 29.3735 13.8176 30.625 17.0313 30.625C20.2449 30.625 23.2663 29.3735 25.5386 27.1012C27.3851 25.2548 28.5565 22.9234 28.9336 20.351L31.0043 22.4217C31.1508 22.5682 31.3495 22.6505 31.5567 22.6505H31.9611C31.258 25.247 29.8883 27.6128 27.9693 29.5318ZM19.5828 17.1206C19.3671 16.7469 18.8893 16.6189 18.5156 16.8347L16.6406 17.9172C16.3989 18.0567 16.25 18.3146 16.25 18.5938C16.25 18.8729 16.3989 19.1308 16.6406 19.2703L18.5156 20.3528C18.6387 20.4238 18.773 20.4576 18.9055 20.4576C19.1755 20.4576 19.4381 20.3175 19.5828 20.0669C19.7096 19.8473 19.7169 19.5921 19.6262 19.375H22.4443C22.2788 20.5393 21.7446 21.6144 20.8982 22.4607C19.8653 23.4937 18.492 24.0625 17.0313 24.0625C15.5705 24.0625 14.1972 23.4937 13.1642 22.4607C12.1313 21.4278 11.5625 20.0545 11.5625 18.5938C11.5625 17.133 12.1313 15.7597 13.1643 14.7267C14.1972 13.6938 15.5705 13.125 17.0313 13.125C18.492 13.125 19.8653 13.6938 20.8983 14.7268C21.7446 15.5731 22.2788 16.6482 22.4444 17.8125H19.6263C19.7169 17.5953 19.7096 17.3402 19.5828 17.1206ZM31.8803 21.088L30.1673 19.375H35.6196L37.3327 21.088H31.8803Z"
+                              fill="#1C3637" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_1_17447">
+                              <rect width="40" height="40" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </div>
+                  <div>
+                     <h5 class="text-white">Our Mission</h5>
+                     <p class="mb-0 text-white">Our mission is push engage boundaries, enga audiences, and driv engage
+                        innovation through innovation</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Why Choose Card -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+               <div class="why-choose-card">
+                  <div class="icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox=" 0 0 40 40" fill="none">
+                        <g clip-path="url(#clip0_1_17457)">
+                           <path
+                              d="M20 12.0312C15.606 12.0312 12.0312 15.606 12.0312 20C12.0312 24.394 15.606 27.9688 20 27.9688C24.394 27.9688 27.9688 24.394 27.9688 20C27.9688 15.606 24.394 12.0312 20 12.0312ZM20 26.4062C16.4676 26.4062 13.5938 23.5324 13.5938 20C13.5938 16.4676 16.4676 13.5938 20 13.5938C23.5324 13.5938 26.4062 16.4676 26.4062 20C26.4062 23.5324 23.5324 26.4062 20 26.4062Z"
+                              fill="#1C3637" />
+                           <path
+                              d="M19.9998 19.2784C19.4895 19.2784 19.0742 18.9339 19.0742 18.5105C19.0742 18.0872 19.4895 17.7427 19.9998 17.7427C20.5102 17.7427 20.9255 18.0872 20.9255 18.5105C20.9255 18.942 21.2753 19.2918 21.7067 19.2918C22.1381 19.2918 22.488 18.942 22.488 18.5105C22.488 17.4812 21.7714 16.6062 20.7811 16.2986V16.2578C20.7811 15.8263 20.4313 15.4766 19.9998 15.4766C19.5684 15.4766 19.2186 15.8263 19.2186 16.2578V16.2986C18.2284 16.6062 17.5117 17.4812 17.5117 18.5105C17.5117 19.7955 18.6279 20.8409 19.9998 20.8409C20.5102 20.8409 20.9255 21.1853 20.9255 21.6087C20.9255 22.032 20.5103 22.3765 19.9998 22.3765C19.4894 22.3765 19.0742 22.032 19.0742 21.6087C19.0742 21.1772 18.7244 20.8274 18.293 20.8274C17.8616 20.8274 17.5117 21.1772 17.5117 21.6087C17.5117 22.6384 18.2287 23.5136 19.2195 23.8209C19.2296 24.2436 19.5748 24.5833 19.9998 24.5833C20.4249 24.5833 20.77 24.2436 20.7802 23.8209C21.7709 23.5136 22.488 22.6384 22.488 21.6087C22.488 20.3237 21.3718 19.2784 19.9998 19.2784Z"
+                              fill="#1C3637" />
+                           <path
+                              d="M35.1774 6.72881L35.1619 6.71318C34.8567 6.40811 34.3622 6.40811 34.0569 6.71318C33.7519 7.01826 33.7519 7.51295 34.0569 7.81811L34.0726 7.83373C34.2251 7.98631 34.4251 8.06256 34.625 8.06256C34.8249 8.06256 35.0248 7.98631 35.1774 7.83373C35.4825 7.52865 35.4825 7.03397 35.1774 6.72881Z"
+                              fill="#1C3637" />
+                           <path
+                              d="M5.2593 31.4008C5.11406 31.2554 4.9125 31.1719 4.70703 31.1719C4.50156 31.1719 4.3 31.2555 4.15469 31.4008C4.00938 31.5461 3.92578 31.7477 3.92578 31.9531C3.92578 32.1586 4.0093 32.3602 4.15469 32.5055C4.30008 32.6508 4.50156 32.7344 4.70703 32.7344C4.9125 32.7344 5.11406 32.6508 5.2593 32.5055C5.40461 32.3602 5.48828 32.1586 5.48828 31.9531C5.48828 31.7477 5.40469 31.5461 5.2593 31.4008Z"
+                              fill="#1C3637" />
+                           <path
+                              d="M39.9973 19.8982C39.9752 16.2386 38.9524 12.6184 37.0317 9.50649C36.8052 9.13931 36.3238 9.02532 35.9566 9.25196C35.5894 9.4786 35.4755 9.95993 35.702 10.3271C37.0945 12.5834 37.9512 15.0347 38.2916 17.5243C37.997 17.1788 37.6552 16.7909 37.2684 16.372C35.785 14.7656 33.4005 12.4532 30.4647 10.5604C30.1936 10.3856 29.8552 10.4 29.6039 10.5696L28.1139 11.4299C26.7634 10.1499 25.1406 9.21212 23.364 8.68524V6.9129C23.364 6.48142 23.0141 6.13165 22.5827 6.13165H17.4172C16.9858 6.13165 16.6359 6.48142 16.6359 6.9129V8.68517C14.8593 9.21204 13.2366 10.1498 11.886 11.4299L10.4788 10.6174C10.2237 10.3892 9.83883 10.3479 9.53656 10.5419C6.58875 12.4337 4.20891 14.7383 2.73148 16.3385C2.34414 16.7581 2.00352 17.1452 1.71086 17.4893C2.24477 13.6068 4.02523 9.89915 6.96273 6.96165C13.0354 0.888994 22.3733 -0.207178 29.6706 4.2961C30.0377 4.52259 30.5191 4.40868 30.7458 4.04149C30.9724 3.67431 30.8584 3.19298 30.4912 2.96634C26.7249 0.642197 22.2141 -0.368741 17.7907 0.120478C15.5803 0.364775 13.4446 0.968916 11.443 1.9161C9.3718 2.89618 7.49273 4.22204 5.85797 5.85673C2.78102 8.93368 0.826797 12.8301 0.206406 17.1248C0.0739844 18.0413 0.00703125 18.9661 0.00367187 19.8906C7.81249e-05 19.927 0 19.9616 0 19.9988C0 20.0414 7.81249e-05 20.0796 0.0046875 20.1195C0.0290625 23.3063 0.808672 26.4812 2.28523 29.2934C2.42492 29.5595 2.69656 29.7116 2.97758 29.7116C3.09992 29.7116 3.22414 29.6827 3.34008 29.6219C3.72211 29.4213 3.86914 28.949 3.66859 28.567C2.64523 26.618 1.99797 24.5584 1.71156 22.477C2.00547 22.8216 2.34625 23.2084 2.73164 23.6257C4.215 25.2322 6.59953 27.5445 9.53531 29.4374C9.66633 29.5218 9.81297 29.5621 9.95789 29.562C10.1048 29.562 10.2492 29.5194 10.3745 29.4406L11.8861 28.5678C13.2366 29.8479 14.8594 30.7856 16.636 31.3125V33.0848C16.636 33.5163 16.9859 33.866 17.4173 33.866H22.5828C23.0142 33.866 23.3641 33.5163 23.3641 33.0848V31.3125C25.1407 30.7856 26.7634 29.8479 28.114 28.5678L29.5187 29.3788C29.6638 29.5098 29.8514 29.5799 30.0422 29.5799C30.1866 29.5799 30.3328 29.5398 30.4634 29.456C33.4113 27.5642 35.7912 25.2596 37.2685 23.6593C37.6559 23.2397 37.9965 22.8526 38.2891 22.5085C37.7549 26.382 35.9807 30.0925 33.0372 33.0359C27.2243 38.8488 18.1612 40.1066 10.9976 36.0945C10.6213 35.8839 10.1452 36.018 9.93422 36.3945C9.72336 36.7709 9.85766 37.247 10.2341 37.4578C13.209 39.1239 16.6112 39.9964 20.0288 39.9964C20.892 39.9964 21.7563 39.9407 22.6149 39.8281C27.0122 39.2513 30.9983 37.2847 34.1422 34.1409C35.777 32.506 37.1028 30.6269 38.0829 28.5556C39.0301 26.5538 39.6341 24.4181 39.8784 22.2076C39.9565 21.5011 39.9959 20.7924 39.9982 20.0849C40 20.0564 40 20.0284 40 19.9988C40 19.9634 39.9999 19.931 39.9973 19.8982ZM1.71492 19.9893C2.40359 19.033 4.47984 16.4644 7.44328 14.0134L6.6993 15.302C6.5957 15.4814 6.56758 15.6946 6.62125 15.8948C6.67492 16.0949 6.80578 16.2656 6.98523 16.3692L8.52047 17.2556C8.30695 18.1516 8.19898 19.0716 8.19898 19.9988C8.19898 20.926 8.30695 21.846 8.52047 22.7421L6.98523 23.6285C6.80578 23.7321 6.67484 23.9027 6.62125 24.1029C6.56758 24.3031 6.5957 24.5163 6.6993 24.6957L7.41008 25.9269C4.50664 23.5061 2.42688 20.9595 1.71492 19.9893ZM29.7553 27.7113L28.3766 26.9152C28.0644 26.7349 27.6688 26.792 27.42 27.0534C26.0534 28.4903 24.3176 29.4932 22.4003 29.9538C22.0491 30.0381 21.8016 30.3523 21.8016 30.7134V32.3035H18.1984V30.7134C18.1984 30.3523 17.9509 30.0381 17.5997 29.9538C15.6824 29.4932 13.9466 28.4904 12.58 27.0534C12.3312 26.792 11.9358 26.7348 11.6233 26.9152L10.2446 27.7113L8.44305 24.5909L9.81984 23.7961C10.1323 23.6157 10.2805 23.2448 10.1786 22.8987C9.9018 21.9596 9.76148 20.984 9.76148 19.9988C9.76148 19.0137 9.9018 18.038 10.1786 17.099C10.2806 16.7529 10.1323 16.382 9.81984 16.2016L8.44305 15.4067L10.2446 12.2864L11.6233 13.0824C11.9358 13.2629 12.3313 13.2058 12.58 12.9442C13.9466 11.5074 15.6824 10.5045 17.5997 10.0439C17.9509 9.95954 18.1984 9.6454 18.1984 9.28423V7.69415H21.8015V9.28423C21.8015 9.6454 22.0491 9.95954 22.4002 10.0439C24.3175 10.5045 26.0533 11.5073 27.4199 12.9442C27.6688 13.2057 28.0641 13.2629 28.3766 13.0824L29.7553 12.2864L31.5569 15.4067L30.1801 16.2016C29.8676 16.382 29.7194 16.7529 29.8213 17.099C30.0981 18.0381 30.2384 19.0137 30.2384 19.9988C30.2384 20.984 30.0981 21.9597 29.8213 22.8987C29.7193 23.2448 29.8676 23.6157 30.1801 23.7961L31.5569 24.5909L29.7553 27.7113ZM32.5565 25.9847L33.3007 24.6956C33.4043 24.5162 33.4324 24.303 33.3787 24.1028C33.3251 23.9027 33.1942 23.732 33.0148 23.6284L31.4795 22.742C31.693 21.8459 31.801 20.9259 31.801 19.9988C31.801 19.0716 31.693 18.1516 31.4795 17.2555L33.0148 16.3691C33.1942 16.2655 33.3252 16.0949 33.3787 15.8947C33.4324 15.6945 33.4043 15.4813 33.3007 15.3019L32.5899 14.0708C35.4934 16.4915 37.5731 19.0381 38.2852 20.0083C37.5964 20.9647 35.5202 23.5335 32.5565 25.9847Z"
+                              fill="#1C3637" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_1_17457">
+                              <rect width="40" height="40" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </div>
+                  <div>
+                     <h5 class="text-white">Our Vision</h5>
+                     <p class="mb-0 text-white">Our mission is push engage boundaries, enga audiences, and driv engage
+                        innovation through innovation</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Why Choose Card -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+               <div class="why-choose-card">
+                  <div class="icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox=" 0 0 40 40" fill="none">
+                        <g clip-path="url(#clip0_1_17478)">
+                           <path
+                              d="M9.88151 13.0246C9.88151 12.5897 10.2341 12.237 10.6691 12.237C11.1041 12.237 11.4567 12.5896 11.4567 13.0246C11.4567 13.4596 11.1041 13.8122 10.6691 13.8122C10.2341 13.8122 9.88151 13.4595 9.88151 13.0246ZM34.1647 23.5557L25.3842 22.7579L22.9433 29.6052H27.2836C27.7185 29.6052 28.0711 29.9578 28.0711 30.3927V32.7551H29.6461C30.0809 32.7551 30.4336 33.1078 30.4336 33.5426V38.4251H30.8273C31.2622 38.4251 31.6148 38.7777 31.6148 39.2126C31.6148 39.6474 31.2622 40.0001 30.8273 40.0001H9.56501C9.13016 40.0001 8.77752 39.6474 8.77752 39.2126C8.77752 38.7777 9.13016 38.4251 9.56501 38.4251H9.95876V33.5426C9.95876 33.1078 10.3114 32.7551 10.7463 32.7551H12.3212V30.3927C12.3212 29.9578 12.6739 29.6052 13.1087 29.6052H17.6204L14.6215 20.4017L5.4558 16.7982C4.95652 16.6522 4.70287 15.8291 5.33058 15.3949L7.23947 14.216C7.24025 14.216 7.24112 14.216 7.24112 14.2151C8.11823 13.6749 8.94423 15.016 8.06712 15.5562L7.49706 15.9082L15.5437 19.0717C15.7626 19.1583 15.9311 19.3362 16.0043 19.5607L19.2773 29.6052H21.2716L24.1052 21.6538C24.225 21.3183 24.5628 21.1017 24.9187 21.134L32.755 21.8459L28.3191 14.5222C28.1947 14.3167 28.1719 14.06 28.2569 13.8348L31.362 5.65744L23.2295 7.92313C22.987 7.99007 22.7169 7.93416 22.5216 7.77508L15.865 2.3602L15.3499 10.6675C15.3342 10.9226 15.1956 11.1549 14.9782 11.2889L14.0977 11.833C13.2048 12.3844 12.3772 11.044 13.2701 10.4926L13.8032 10.1635L14.3876 0.73403C14.4347 0.15286 15.1435 -0.243407 15.6704 0.17176L23.1996 6.29609L32.44 3.72257C33.1288 3.57467 33.6165 4.18427 33.3874 4.76119L29.8657 14.0347L34.9096 22.364C35.2779 22.8709 34.8207 23.6024 34.1647 23.5557ZM14.8412 34.3301H11.5337V38.4251H14.8412V34.3301ZM23.9761 34.3301H16.4162V38.4251H23.9761V34.3301ZM25.5511 34.3301V38.4251H28.8586V34.3301H25.5511ZM26.4961 31.1802H13.8962V32.7551H26.4961V31.1802Z"
+                              fill="#1C3637" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_1_17478">
+                              <rect width="40" height="40" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </div>
+                  <div>
+                     <h5 class="text-white">Our Awards</h5>
+                     <p class="mb-0 text-white">Our mission is push engage boundaries, enga audiences, and driv engage
+                        innovation through innovation</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Why Choose Card -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+               <div class="why-choose-card">
+                  <img class="overflow-img" src="assets/img/bg-img/82.jpg" alt="">
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </section>
+
+   <!-- Travel Deals Section -->
+   <section class="travel-deals-section touria-container">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-5 align-items-end">
+            <!-- Section Heading -->
+            <div class="col-12 col-md-6">
+               <div class="section-heading">
+                  <span class="sub-title text-info">Travel Deals</span>
+                  <h2 class="mb-0">Our Travel Deals For You</h2>
+               </div>
+            </div>
+
+            <!-- Button -->
+            <div class="col-12 col-md-6">
+               <div class="text-md-end">
+                  <a href="tour-list.html" class="btn btn-info">View More Deals <i class="icon-arrow-right"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="divider-sm"></div>
+
+      <div class="container">
+         <div class="row g-4 touria-filter">
+
+            <!-- Travel Deals Card -->
+            <div class="col-12 col-sm-6 col-lg-3 filter-item">
+               <div class="travel-deals-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                  <img src="assets/img/bg-img/75.jpg" alt="">
+                  <div class="travel-deals-content">
+                     <h4 class="mb-1 text-white">Australia</h4>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$399</span></p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Travel Deals Card -->
+            <div class="col-12 col-sm-6 col-lg-3 filter-item">
+               <div class="travel-deals-card wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                  <img src="assets/img/bg-img/76.jpg" alt="">
+                  <div class="travel-deals-content">
+                     <h4 class="mb-1 text-white">India</h4>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$199</span></p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Travel Deals Card -->
+            <div class="col-12 col-sm-6 col-lg-3 filter-item">
+               <div class="travel-deals-card wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+                  <img src="assets/img/bg-img/77.jpg" alt="">
+                  <div class="travel-deals-content">
+                     <h4 class="mb-1 text-white">Bangladesh</h4>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$149</span></p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Travel Deals Card -->
+            <div class="col-12 col-sm-6 col-lg-3 filter-item">
+               <div class="travel-deals-card wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1000ms">
+                  <img src="assets/img/bg-img/78.jpg" alt="">
+                  <div class="travel-deals-content">
+                     <h4 class="mb-1 text-white">Switzerland</h4>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$249</span></p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Travel Deals Card -->
+            <div class="col-12 col-sm-6 col-lg-3 filter-item">
+               <div class="travel-deals-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                  <img src="assets/img/bg-img/79.jpg" alt="">
+                  <div class="travel-deals-content">
+                     <h4 class="mb-1 text-white">Turkey</h4>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$219</span></p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Travel Deals Card -->
+            <div class="col-12 col-sm-6 col-lg-3 filter-item">
+               <div class="travel-deals-card wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                  <img src="assets/img/bg-img/80.jpg" alt="">
+                  <div class="travel-deals-content">
+                     <h4 class="mb-1 text-white">USA</h4>
+                     <p class="mb-0 text-white">Starting From <span class="text-info">$299</span></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </section>
+
+   <!-- Testimonial Section -->
+   <div class="testimonial-section theme-two px-3 mx-3 mx-lg-4 mx-xxl-5 jarallax" data-jarallax="" data-speed="0.6"
+      style="background-image: url(assets/img/bg-img/83.jpg);">
+      <!-- Section Heading -->
+      <div class="container">
+         <div class="row g-0 align-items-end">
+            <div class="col-3">
+               <div class="testimonial-navigation-container">
+                  <div class="testimonial-button-prev-three">
+                     <i class="icon-arrow-left"></i>
+                  </div>
+                  <div class="testimonial-button-next-three">
+                     <i class="icon-arrow-right"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-9">
+               <div class="testimonial-title">Our Client's Amazing Feedback</div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Testimonial Slider -->
+      <div class="swiper testimonial-swiper-three">
+         <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+               <div class="testimonial-card-three">
+                  <div class="container">
+                     <div class="row g-0">
+                        <div class="col-3">
+                           <div class="testimonial-thumbnail">
+                              <img src="assets/img/bg-img/84.jpg" alt="">
+                           </div>
+                        </div>
+
+                        <div class="col-9">
+                           <div class="testimonial-content">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="82" height="51" viewBox="0 0 82 51"
+                                 fill="none">
+                                 <path
+                                    d="M80.1188 0.311764C80.9572 0.311764 81.7106 0.847813 81.9374 1.64295C82.1889 2.52709 81.708 3.45276 80.8181 3.79309C74.9083 6.05698 70.5684 9.93769 67.8903 15.3462C76.0864 17.3774 82.0036 24.513 82.0036 32.8104C82.0036 42.7662 73.5438 50.8652 63.1456 50.8652C52.7473 50.8652 44.2884 42.7662 44.2884 32.8104C44.2728 32.6737 42.6081 5.75547 79.833 0.331985C79.929 0.317902 80.0239 0.311764 80.1188 0.311764ZM63.1456 47.2543C71.4635 47.2543 78.23 40.7746 78.23 32.8104C78.23 25.5374 72.5468 19.3804 65.0111 18.4901C64.4363 18.4213 63.9258 18.1048 63.6274 17.6305C63.328 17.1562 63.2727 16.577 63.4781 16.0586C64.9917 12.2317 67.1457 8.98313 69.9204 6.33214C46.9084 14.0336 48.0407 32.4658 48.0564 32.6765C48.062 40.7746 54.8285 47.2543 63.1456 47.2543Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M35.8454 0.311764C36.6837 0.311764 37.4372 0.847813 37.664 1.64295C37.9154 2.52709 37.4346 3.45276 36.5447 3.79309C30.6349 6.05698 26.2949 9.93769 23.6169 15.3462C31.813 17.3774 37.7302 24.513 37.7302 32.8104C37.7302 42.7662 29.2703 50.8652 18.8721 50.8652C8.47389 50.8652 0.0149956 42.7662 0.0149956 32.8104C-0.000663757 32.6737 -1.66531 5.75547 35.5596 0.331985C35.6556 0.317902 35.7505 0.311764 35.8454 0.311764ZM18.8721 47.2543C27.1901 47.2543 33.9566 40.7746 33.9566 32.8104C33.9566 25.5374 28.2733 19.3804 20.7377 18.4901C20.1629 18.4213 19.6524 18.1048 19.3539 17.6305C19.0545 17.1562 18.9993 16.577 19.2047 16.0586C20.7183 12.2317 22.8723 8.98313 25.6469 6.33214C2.63497 14.0336 3.76725 32.4658 3.78291 32.6765C3.78857 40.7746 10.5551 47.2543 18.8721 47.2543Z"
+                                    fill="#02A5CE" />
+                              </svg>
+                              <h3 class="my-4 text-white fw-normal">At Express Travel, we believe in the transformative
+                                 power of
+                                 travel. As avid explorers
+                                 ourselves, we understand Express Travel, we believe in the transformative power of
+                                 travel. As
+                                 avid explorers ourselves, we understand the deuncover.we understand the desire to
+                                 uncover.</h3>
+
+                              <div class="d-flex flex-wrap gap-4 align-items-center justify-content-between">
+                                 <div>
+                                    <h3 class="text-info">Ralph Edwards</h3>
+                                    <p class="mb-0 text-white">Ceo & Founder</p>
+                                 </div>
+
+                                 <div class="testimonial-rating text-info">
+                                    <i class="ti ti-star-filled"></i>
+                                    <i class="ti ti-star-filled"></i>
+                                    <i class="ti ti-star-filled"></i>
+                                    <i class="ti ti-star-filled"></i>
+                                    <i class="ti ti-star-filled"></i>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+               <div class="testimonial-card-three">
+                  <div class="container">
+                     <div class="row g-0">
+                        <div class="col-3">
+                           <div class="testimonial-thumbnail">
+                              <img src="assets/img/bg-img/84.jpg" alt="">
+                           </div>
+                        </div>
+
+                        <div class="col-9">
+                           <div class="testimonial-content">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="82" height="51" viewBox="0 0 82 51"
+                                 fill="none">
+                                 <path
+                                    d="M80.1188 0.311764C80.9572 0.311764 81.7106 0.847813 81.9374 1.64295C82.1889 2.52709 81.708 3.45276 80.8181 3.79309C74.9083 6.05698 70.5684 9.93769 67.8903 15.3462C76.0864 17.3774 82.0036 24.513 82.0036 32.8104C82.0036 42.7662 73.5438 50.8652 63.1456 50.8652C52.7473 50.8652 44.2884 42.7662 44.2884 32.8104C44.2728 32.6737 42.6081 5.75547 79.833 0.331985C79.929 0.317902 80.0239 0.311764 80.1188 0.311764ZM63.1456 47.2543C71.4635 47.2543 78.23 40.7746 78.23 32.8104C78.23 25.5374 72.5468 19.3804 65.0111 18.4901C64.4363 18.4213 63.9258 18.1048 63.6274 17.6305C63.328 17.1562 63.2727 16.577 63.4781 16.0586C64.9917 12.2317 67.1457 8.98313 69.9204 6.33214C46.9084 14.0336 48.0407 32.4658 48.0564 32.6765C48.062 40.7746 54.8285 47.2543 63.1456 47.2543Z"
+                                    fill="#02A5CE" />
+                                 <path
+                                    d="M35.8454 0.311764C36.6837 0.311764 37.4372 0.847813 37.664 1.64295C37.9154 2.52709 37.4346 3.45276 36.5447 3.79309C30.6349 6.05698 26.2949 9.93769 23.6169 15.3462C31.813 17.3774 37.7302 24.513 37.7302 32.8104C37.7302 42.7662 29.2703 50.8652 18.8721 50.8652C8.47389 50.8652 0.0149956 42.7662 0.0149956 32.8104C-0.000663757 32.6737 -1.66531 5.75547 35.5596 0.331985C35.6556 0.317902 35.7505 0.311764 35.8454 0.311764ZM18.8721 47.2543C27.1901 47.2543 33.9566 40.7746 33.9566 32.8104C33.9566 25.5374 28.2733 19.3804 20.7377 18.4901C20.1629 18.4213 19.6524 18.1048 19.3539 17.6305C19.0545 17.1562 18.9993 16.577 19.2047 16.0586C20.7183 12.2317 22.8723 8.98313 25.6469 6.33214C2.63497 14.0336 3.76725 32.4658 3.78291 32.6765C3.78857 40.7746 10.5551 47.2543 18.8721 47.2543Z"
+                                    fill="#02A5CE" />
+                              </svg>
+                              <h3 class="my-4 text-white fw-normal">At Express Travel, we believe in the transformative
+                                 power of
+                                 travel. As avid explorers
+                                 ourselves, we understand Express Travel, we believe in the transformative power of
+                                 travel. As
+                                 avid explorers ourselves, we understand the deuncover.we understand the desire to
+                                 uncover.</h3>
+
+                              <div class="d-flex flex-wrap gap-4 align-items-center justify-content-between">
+                                 <div>
+                                    <h3 class="text-info">Ralph Edwards</h3>
+                                    <p class="mb-0 text-white">Ceo & Founder</p>
+                                 </div>
+
+                                 <div class="testimonial-rating text-info">
+                                    <i class="ti ti-star-filled"></i>
+                                    <i class="ti ti-star-filled"></i>
+                                    <i class="ti ti-star-filled"></i>
+                                    <i class="ti ti-star-filled"></i>
+                                    <i class="ti ti-star-filled"></i>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Trusted Partners -->
+      <div class="container">
+         <div class="trusted-partners">
+            <h4 class="mb-0">Trusted Clients:</h4>
+            <!-- Trusted Partners Logo -->
+            <div class="trusted-partners-logo">
+               <a href="#"><img class="color-change-img" src="assets/img/partner-img/1.png" alt=""></a>
+               <a href="#"><img class="color-change-img" src="assets/img/partner-img/1.png" alt=""></a>
+               <a href="#"><img class="color-change-img" src="assets/img/partner-img/1.png" alt=""></a>
+               <a href="#"><img class="color-change-img" src="assets/img/partner-img/1.png" alt=""></a>
+               <a href="#"><img class="color-change-img" src="assets/img/partner-img/1.png" alt=""></a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- FAQ Wrapper -->
+   <section class="faq-wrapper">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-5">
+            <!-- Section Heading -->
+            <div class="col-12 col-lg-5">
+               <div class="section-heading pe-xl-5">
+                  <span class="sub-title text-info">Choose Your Place</span>
+                  <h2 class="mb-4">Frequently Asked Questions</h2>
+                  <p class="mb-5">Monotonectally synergize granular markets and front Collaboratively visualize strat
+                     fomediaries</p>
+                  <a href="contact.html" class="btn btn-info">Ask Your Question <i class="icon-arrow-right"></i></a>
+               </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+               <!-- FAQ Accordion -->
+               <div class="faq-accordion">
+                  <div class="accordion gap-4" id="faqAccordion">
+                     <!-- Accordion Item -->
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqQuestion1" aria-expanded="true" aria-controls="faqQuestion1">
+                              What payment methods do you accept?
+                           </button>
+                        </div>
+                        <div id="faqQuestion1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              At Express Travel, we believe in the transformative power of travel. As avid explorers
+                              ourselves, we understand the desire.
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Accordion Item -->
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqQuestion2" aria-expanded="false" aria-controls="faqQuestion2">
+                              Can I customize my travel itinerary?
+                           </button>
+                        </div>
+                        <div id="faqQuestion2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              At Express Travel, we believe in the transformative power of travel. As avid explorers
+                              ourselves, we understand the desire.
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Accordion Item -->
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqQuestion3" aria-expanded="false" aria-controls="faqQuestion3">
+                              How do I book a tour with your agency?
+                           </button>
+                        </div>
+                        <div id="faqQuestion3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              At Express Travel, we believe in the transformative power of travel. As avid explorers
+                              ourselves, we understand the desire.
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Accordion Item -->
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqQuestion4" aria-expanded="false" aria-controls="faqQuestion4">
+                              Can I customize my travel itinerary?
+                           </button>
+                        </div>
+                        <div id="faqQuestion4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              At Express Travel, we believe in the transformative power of travel. As avid explorers
+                              ourselves, we understand the desire.
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </section>
+
+   <!-- Blog Section -->
+   <section class="blog-section theme-two bg-secondary px-3 mx-3 mx-lg-4 mx-xxl-5">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-5 align-items-end">
+            <div class="col-12 col-md-6">
+               <div class="section-heading">
+                  <span class="sub-title text-info">Blog &amp; News</span>
+                  <h2 class="mb-0">Latest News &amp; Articles</h2>
+               </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+               <div class="text-md-end">
+                  <a href="blog.html" class="btn btn-info">View All Blogs <i class="icon-arrow-right"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="divider-sm"></div>
+
+      <div class="container">
+         <div class="row g-4 g-xxl-5">
+
+            <!-- Blog Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="blog-card-two wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                  <!-- Post Image -->
+                  <div class="post-img mb-4">
+                     <img src="assets/img/bg-img/85.jpg" alt="">
+                     <!-- Date -->
+                     <div class="post-date bg-info">
+                        <span>10</span>
+                        <span>Jan</span>
+                     </div>
+                  </div>
+
+                  <!-- Blog Body -->
+                  <div class="post-body">
+                     <div class="blog-meta mb-3 flex-wrap d-flex align-items-center gap-4">
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z"
+                                 stroke="#02A5CE" stroke-width="1.5" />
+                              <path
+                                 d="M20 17.5C20 19.985 20 22 12 22C4 22 4 19.985 4 17.5C4 15.015 7.582 13 12 13C16.418 13 20 15.015 20 17.5Z"
+                                 stroke="#02A5CE" stroke-width="1.5" />
+                           </svg>
+                           Elena Gordon
+                        </a>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M3.464 16.828C2 15.657 2 14.771 2 11C2 7.229 2 5.343 3.464 4.172C4.93 3 7.286 3 12 3C16.714 3 19.071 3 20.535 4.172C21.999 5.344 22 7.229 22 11C22 14.771 22 15.657 20.535 16.828C19.072 18 16.714 18 12 18C9.49 18 8.2 19.738 6 21V17.788C4.906 17.625 4.101 17.338 3.464 16.828Z"
+                                 stroke="#02A5CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                           0 Comment
+                        </a>
+                     </div>
+                     <a class="post-title h4" href="blog-details.html">The Best Time to Visit New York Enjoy the
+                        cherry</a>
+                     <div class="d-block mt-4">
+                        <a class="btn btn-outline-info" href="blog-details.html">Read More <i
+                              class="icon-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Blog Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="blog-card-two wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                  <!-- Post Image -->
+                  <div class="post-img mb-4">
+                     <img src="assets/img/bg-img/86.jpg" alt="">
+                     <!-- Date -->
+                     <div class="post-date bg-info">
+                        <span>27</span>
+                        <span>Feb</span>
+                     </div>
+                  </div>
+
+                  <!-- Blog Body -->
+                  <div class="post-body">
+                     <div class="blog-meta mb-3 flex-wrap d-flex align-items-center gap-4">
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z"
+                                 stroke="#02A5CE" stroke-width="1.5" />
+                              <path
+                                 d="M20 17.5C20 19.985 20 22 12 22C4 22 4 19.985 4 17.5C4 15.015 7.582 13 12 13C16.418 13 20 15.015 20 17.5Z"
+                                 stroke="#02A5CE" stroke-width="1.5" />
+                           </svg>
+                           Elena Gordon
+                        </a>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M3.464 16.828C2 15.657 2 14.771 2 11C2 7.229 2 5.343 3.464 4.172C4.93 3 7.286 3 12 3C16.714 3 19.071 3 20.535 4.172C21.999 5.344 22 7.229 22 11C22 14.771 22 15.657 20.535 16.828C19.072 18 16.714 18 12 18C9.49 18 8.2 19.738 6 21V17.788C4.906 17.625 4.101 17.338 3.464 16.828Z"
+                                 stroke="#02A5CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                           4 Comments
+                        </a>
+                     </div>
+                     <a class="post-title h4" href="blog-details.html">My Story When I Backpacked Around the World</a>
+                     <div class="d-block mt-4">
+                        <a class="btn btn-outline-info" href="blog-details.html">Read More <i
+                              class="icon-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Blog Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="blog-card-two wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+                  <!-- Post Image -->
+                  <div class="post-img mb-4">
+                     <img src="assets/img/bg-img/87.jpg" alt="">
+                     <!-- Date -->
+                     <div class="post-date bg-info">
+                        <span>19</span>
+                        <span>Apr</span>
+                     </div>
+                  </div>
+
+                  <!-- Blog Body -->
+                  <div class="post-body">
+                     <div class="blog-meta mb-3 flex-wrap d-flex align-items-center gap-4">
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z"
+                                 stroke="#02A5CE" stroke-width="1.5" />
+                              <path
+                                 d="M20 17.5C20 19.985 20 22 12 22C4 22 4 19.985 4 17.5C4 15.015 7.582 13 12 13C16.418 13 20 15.015 20 17.5Z"
+                                 stroke="#02A5CE" stroke-width="1.5" />
+                           </svg>
+                           Elena Gordon
+                        </a>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M3.464 16.828C2 15.657 2 14.771 2 11C2 7.229 2 5.343 3.464 4.172C4.93 3 7.286 3 12 3C16.714 3 19.071 3 20.535 4.172C21.999 5.344 22 7.229 22 11C22 14.771 22 15.657 20.535 16.828C19.072 18 16.714 18 12 18C9.49 18 8.2 19.738 6 21V17.788C4.906 17.625 4.101 17.338 3.464 16.828Z"
+                                 stroke="#02A5CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                           2 Comments
+                        </a>
+                     </div>
+                     <a class="post-title h4" href="blog-details.html">The 7 amazing destinations for adventure
+                        seekers</a>
+                     <div class="d-block mt-4">
+                        <a class="btn btn-outline-info" href="blog-details.html">Read More <i
+                              class="icon-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </section>
+
+   <!-- Follow Instagram -->
+   <div class="follow-instagram-section">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Follow Instagram Swiper -->
+      <div class="swiper follow-instagram-swiper">
+         <div class="swiper-wrapper align-items-center">
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/88.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/89.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/90.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/91.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/92.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/93.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/94.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/95.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/88.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/89.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/90.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/91.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/92.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/93.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/94.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Follow Instagram Card -->
+            <div class="swiper-slide">
+               <div class="follow-instagram-card theme-two">
+                  <img src="assets/img/bg-img/95.jpg" alt="">
+                  <!-- Instagram Button -->
+                  <a href="#" class="instagram-btn">
+                     <i class="ti ti-brand-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="footer-wrapper style-two px-3 mx-3 mx-lg-4 mx-xxl-5 mb-3 mb-lg-4 mb-xxl-5 jarallax" data-jarallax
+      data-speed="0.6" style="background-image: url('assets/img/bg-img/96.jpg');">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-5">
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-xl-4">
+               <div class="footer-card pe-lg-5">
+                  <a href="#" class="footer-logo mb-4">
+                     <img src="assets/img/core-img/logo-five.png" alt="">
+                  </a>
+                  <p class="mb-4 text-white">Targeting consultation Death yet way ndulgence off under folly death wrote
+                     cause her yet way yet wayspite.</p>
+
+                  <!-- Subscribe Form -->
+                  <div class="subscribe-form">
+                     <input class="form-control" type="email" value="touria@gmail.com" placeholder="Email Address">
+                     <button type="submit" class="btn">
+                        <i class="icon-arrow-right"></i>
+                     </button>
+                  </div>
+
+                  <!-- Social Nav -->
+                  <div class="social-nav">
+                     <a href="#">
+                        <i class="ti ti-brand-facebook"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-x"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-linkedin"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-instagram"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-xl">
+               <div class="footer-card">
+                  <h5 class="mb-5 card-title text-white">Quick Links</h5>
+
+                  <!-- Footer Nav -->
+                  <ul class="footer-nav">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">Services</a></li>
+                     <li><a href="#">Tour Guide</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-xl">
+               <div class="footer-card">
+                  <h5 class="mb-5 card-title text-white">Services</h5>
+
+                  <!-- Footer Nav -->
+                  <ul class="footer-nav">
+                     <li><a href="#">Style Guide</a></li>
+                     <li><a href="#">Password Protected</a></li>
+                     <li><a href="#">404 Error</a></li>
+                     <li><a href="#">Changelog</a></li>
+                     <li><a href="#">License</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-xl-3">
+               <div class="footer-card">
+                  <h5 class="mb-5 card-title text-white">Contact Us</h5>
+
+                  <div class="d-flex flex-column gap-4">
+                     <!-- Contact Card -->
+                     <div class="footer-contact-card">
+                        <div class="icon">
+                           <i class="ti ti-map-pin"></i>
+                        </div>
+                        <p class="mb-0 text-white">258 Street Avenue, Berlin, Germany</p>
+                     </div>
+
+                     <!-- Contact Card -->
+                     <div class="footer-contact-card">
+                        <div class="icon">
+                           <i class="ti ti-mail"></i>
+                        </div>
+                        <p class="mb-0 text-white">info-help@travo.com</p>
+                     </div>
+
+                     <!-- Contact Card -->
+                     <div class="footer-contact-card">
+                        <div class="icon">
+                           <i class="ti ti-phone"></i>
+                        </div>
+                        <p class="mb-0 text-white">(+256) 214 203 215<br>(+256) 214 203 216</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Copyright -->
+      <div class="copyright-wrapper border-top">
+         <div class="container">
+            <div class="row align-items-center">
+               <!-- Copyright -->
+               <div class="col-12 col-md-6">
+                  <p class="mb-3 mb-md-0 copyright">Copyright © <span id="year"></span> <a href="#">Nano Theme</a>
+                     All rights reserved.</p>
+               </div>
+
+               <!-- Footer Bottom Nav -->
+               <div class="col-12 col-md-6">
+                  <div class="footer-bottom-nav">
+                     <a href="#">Privacy Policy</a>
+                     <a href="#">Terms of Service</a>
+                     <a href="#">Legal Agreement</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Cookie Alert -->
+   <div class="cookiealert bg-info shadow-lg show">
+      <h4 class="text-white"><i class="ti ti-cookie"></i> Cookie Alert</h4>
+      <p class="mb-4 text-white">We use cookies for the best experience on our website, for social media features and to
+         anal
+         traffic. accepting
+         you agree to our use of cookies. Read <a href="#" target="_blank"> Cookies Policy.</a></p>
+      <button class="btn btn-dark btn-sm acceptcookies" type="button" aria-label="Close">Accept</button>
+   </div>
+
+   <!-- Scroll To Top -->
+   <button id="scrollTopButton" class="touria-scrolltop theme-three scrolltop-hide">
+      <i class="icon-arrow-up"></i>
+   </button>
+
+   <!-- All JavaScript Files-->
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/slideToggle.min.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/jarallax.min.js"></script>
+   <script src="assets/js/index.js"></script>
+   <script src="assets/js/cookiealert.js"></script>
+   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+   <script src="assets/js/isotope.pkgd.min.js"></script>
+   <script src="assets/js/nice-select2.js"></script>
+   <script src="assets/js/flatpickr.min.js"></script>
+   <script src="assets/js/venobox.min.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   <script src="assets/js/active.js"></script>
+
+</body>
+
+</html>
